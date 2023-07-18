@@ -39,7 +39,7 @@ nav {
 }
 .text-logo h1 {
   color: var(--primary-color);
-  font-size: 2.4rem;
+  font-size: 3.5rem;
   font-weight: 700;
 }
 span {
@@ -316,6 +316,9 @@ footer{
   }
   #check:checked ~ .nav-item {
     right: 0;
+  }
+  .text-logo h1 {
+    font-size: 2rem;
   }
   /* nav bar style ends Here  */
 

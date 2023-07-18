@@ -21,6 +21,9 @@ body {
   font-family: "Poppins", sans-serif;
   background: #fff;
 }
+button {
+  cursor: pointer;
+}
 
 /* Header Section Style */
 header {
@@ -167,19 +170,16 @@ span {
 
 /* main product section style starts here */
 
-main {
-  margin: 0 10vw 0 10vh;
-}
-main h2{
+section h2 {
   text-align: center;
 }
-.product-container{
+.product-container {
+  margin: 0 10vw 0 10vh;
   display: grid;
   justify-content: center;
   column-gap: 5vw;
   row-gap: 3vh;
   grid-template-columns: repeat(3, 18vw);
-  grid-template-rows: repeat(3, 1fr);
   margin-bottom: 5rem;
 }
 .product {
@@ -191,7 +191,7 @@ main h2{
   background: #fff;
   box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
 }
-.product img{
+.product img {
   width: 100%;
 }
 .product-name {
@@ -207,32 +207,64 @@ main h2{
   font-weight: 400;
   line-height: 0;
 }
-.ratings{
+.ratings {
   display: flex;
   justify-content: left;
-  align-items:center;
+  align-items: center;
   margin: 0;
 }
-.ratings p{
+.ratings p {
   height: 1.1rem;
   width: 1.1rem;
   font-size: 1.3rem;
   font-weight: 600;
 }
-.ratings i{
-  color:#FB8200;
+.ratings i {
+  color: #fb8200;
   height: 1.1rem;
   width: 1.1rem;
   margin-right: 0.5rem;
 }
-.btn-see-more{
-  grid-column-start: 3;
-  text-align: right;
+.btn-see-more {
+  margin-right: 8vw;
+  text-align: center;
+  margin-bottom: 5vh;
 }
-.see-more-btn i{
+.see-more-btn i {
   margin-left: 1rem;
 }
 
+/* Feature product style start here */
+.feature-container {
+  margin: 0 10vw 0 10vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5vw;
+}
+.feature-right {
+  text-align: left;
+}
+.feature-title {
+  color: #0a0826;
+  font-size: 3.8rem;
+  font-weight: 700;
+  line-height: 6rem;
+  text-align: left;
+}
+.feature-des {
+  max-width: 30vw;
+  color: #6c6c6c;
+  font-weight: 700;
+  line-height: 2.8rem;
+}
+#feature-btn {
+  border-radius: 0;
+  margin-bottom: 5vh;
+}
+/* feature style ends here */
+
+/* Responsive style starts here */
 @media (max-width: 580px) {
   .nav-item {
     flex-direction: column;
@@ -292,11 +324,28 @@ main h2{
   /* e-com logo section style ends here */
 
   /* main product responsive style starts here */
-  .product-container{
+  .product-container {
     grid-template-columns: repeat(1, 1fr);
     margin-bottom: 3rem;
   }
   /* main product responsive style ends here */
+
+  /* Feature product style start here */
+  .feature-container {
+    flex-direction: column;
+    margin: 0 5vw 0 5vw;
+  }
+  .feature-right {
+    text-align: center;
+  }
+  .feature-title {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  .feature-des {
+    max-width: 100%;
+  }
+  /* Feature product style ends here */
 }
 
 @media (min-width: 580.1px) and (max-width: 752px) {
@@ -347,12 +396,29 @@ main h2{
   /* e-com logo section style ends here */
 
   /* main product responsive style starts here */
-  .product-container{
+  .product-container {
     grid-template-columns: repeat(2, 1fr);
     margin-bottom: 3rem;
     column-gap: 10vw;
   }
   /* main product responsive style ends here */
+
+  /* Feature product style start here */
+  .feature-container {
+    flex-direction: column;
+    margin: 0 5vw 0 5vw;
+  }
+  .feature-right {
+    text-align: center;
+  }
+  .feature-title {
+    text-align: center;
+    font-size: 3rem;
+  }
+  .feature-des {
+    max-width: 100%;
+  }
+  /* Feature product style ends here */
 }
 @media (min-width: 752.1px) and (max-width: 1200px) {
   .banner-right {
@@ -364,8 +430,9 @@ main h2{
     gap: 3rem;
   }
   /* e-com logo section style ends here */
+
   /* main product responsive style starts here */
-  .product-container{
+  .product-container {
     grid-template-columns: repeat(2, 1fr);
     margin-bottom: 3rem;
   }
@@ -374,4 +441,20 @@ main h2{
     height: auto;
   }
   /* main product responsive style ends here */
+
+  /* Feature product style start here */
+  .feature-container {
+    flex-direction: column;
+    margin: 0 5vw 0 5vw;
+  }
+  .feature-right {
+    text-align: center;
+  }
+  .feature-title {
+    text-align: center;
+  }
+  .feature-des {
+    max-width: 100%;
+  }
+  /* Feature product style ends here */
 }

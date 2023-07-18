@@ -9,22 +9,39 @@
       src="https://kit.fontawesome.com/b8b66df87d.js"
       crossorigin="anonymous"
     ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header>
       <nav>
         <div class="text-logo">
-          <h1>Creative Influencer</h1>
+          <h1><span>Creative</span> Influencer</h1>
         </div>
+        <input type="checkbox" id="check" />
         <div class="nav-item">
+          <label for="check" class="close-menu"
+            ><i class="fas fa-times"></i
+          ></label>
           <a href="#">Home</a>
           <a href="#">Products</a>
           <a href="#">Sign Up</a>
           <a href="#">Login</a>
-          <div class="nav-icon">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <i class="fa-solid fa-cart-shopping"></i>
-          </div>
+        </div>
+        <div class="nav-icon">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+
+        <div class="hamburger-menu">
+          <label for="check" class="open-menu"
+            ><i class="fas fa-bars"></i
+          ></label>
         </div>
       </nav>
     </header>

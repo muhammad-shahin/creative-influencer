@@ -264,6 +264,32 @@ section h2 {
 }
 /* feature style ends here */
 
+/* footer style starts here*/
+footer{
+  background-color: #0A0826;
+  width: 100%;
+  margin: 0 auto;
+  padding: 5rem 0;
+  text-align: center;
+}
+.footer-title{
+  color: #fff;
+  line-height: 2rem;
+}
+.footer-des{
+  color: #fff;
+}
+.footer-social-icon{
+  margin-top: 1rem;
+}
+.footer-social-icon i{
+  font-size: 2rem;
+  border-radius: 50%;
+  padding: 0.4rem;
+  background-color: white;
+  opacity: 0.5;
+}
+
 /* Responsive style starts here */
 @media (max-width: 580px) {
   .nav-item {
